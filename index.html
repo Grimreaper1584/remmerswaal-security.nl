@@ -375,6 +375,12 @@
       margin-bottom: 1.5rem;
       line-height: 1;
     }
+    .dienst-price .excl-btw {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-left: 0.4rem;
+    }
     .dienst-price small {
       font-size: 0.72rem;
       color: var(--muted);
@@ -769,7 +775,7 @@
         <div class="dienst-tier">Instap</div>
         <h3>Externe Vulnerability Scan</h3>
         <div class="tagline">Weet wat er van buitenaf zichtbaar en aanvalbaar is.</div>
-        <div class="dienst-price">€ 449 <small>eenmalig · rapport binnen 48 uur</small></div>
+        <div class="dienst-price">€ 449 <span class="excl-btw">excl. btw</span> <small>eenmalig · rapport binnen 48 uur</small></div>
         <div class="dienst-divider"></div>
         <ul>
           <li>Scan van alle externe IP-adressen en domeinen</li>
@@ -785,7 +791,7 @@
         <div class="dienst-tier">Volledig</div>
         <h3>Security Audit — Extern + Intern</h3>
         <div class="tagline">Compleet beeld van uw aanvalsvlak, van buiten én van binnen.</div>
-        <div class="dienst-price">€ 895 <small>eenmalig · inclusief adviesgesprek</small></div>
+        <div class="dienst-price">€ 895 <span class="excl-btw">excl. btw</span> <small>eenmalig · inclusief adviesgesprek</small></div>
         <div class="dienst-divider"></div>
         <ul>
           <li>Alles uit de externe scan</li>
@@ -801,7 +807,7 @@
         <div class="dienst-tier">Doorlopend</div>
         <h3>Maandelijkse Security Monitoring</h3>
         <div class="tagline">Kwetsbaarheden gesignaleerd voordat ze een probleem worden.</div>
-        <div class="dienst-price">€ 295 <small>per maand · opzegbaar per kwartaal</small></div>
+        <div class="dienst-price">€ 295 <span class="excl-btw">excl. btw</span> <small>per maand · opzegbaar per kwartaal</small></div>
         <div style="font-size:0.75rem;color:var(--muted);margin-bottom:1rem;font-family:var(--mono);">// Tarief geldt voor organisaties tot 25 medewerkers · Groter? Neem contact op voor maatwerk.</div>
         <div class="dienst-divider"></div>
         <ul>
@@ -938,9 +944,9 @@
           <select name="dienst">
             <option value="">Selecteer een dienst...</option>
             <option value="gratis-pilot">Gratis pilot scan (eerste 3 klanten)</option>
-            <option value="extern">Externe Vulnerability Scan (€449)</option>
-            <option value="audit">Security Audit Extern + Intern (€895)</option>
-            <option value="monitoring">Maandelijkse Security Monitoring (€295/mnd)</option>
+            <option value="extern">Externe Vulnerability Scan (€449 excl. btw)</option>
+            <option value="audit">Security Audit Extern + Intern (€895 excl. btw)</option>
+            <option value="monitoring">Maandelijkse Security Monitoring (€295/mnd excl. btw)</option>
             <option value="advies">Vraag / overleg</option>
           </select>
         </div>
