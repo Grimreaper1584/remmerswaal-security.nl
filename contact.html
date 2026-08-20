@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Remmerswaal Security</title>
+  <meta name="description" content="Plan een vrijblijvend gesprek met Remmerswaal Security. E-mail, LinkedIn en het contactformulier — reactie binnen één werkdag." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Remmerswaal<span>.</span>Security</a>
+  <ul class="nav-links">
+    <li><a href="over-ons.html">Over ons</a></li>
+    <li><a href="pakketten.html">Pakketten</a></li>
+    <li><a href="index.html#hoe">Werkwijze</a></li>
+    <li><a href="contact.html" class="is-active">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Vrijblijvend gesprek</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="hero-tag">Contact</div>
+  <h1>Plan een vrijblijvend gesprek.</h1>
+  <p class="hero-sub">
+    Vul het formulier in of neem rechtstreeks contact op. Geen verplichtingen, geen verkoopgesprek — gewoon een eerlijk beeld van wat nodig is voor uw kantoor.
+  </p>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" style="padding-top: 0;">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p>
+          Vul het formulier in en ik neem <strong>binnen één werkdag</strong> contact met u op.
+        </p>
+        <div class="contact-detail">
+          <a href="mailto:robin@remmerswaal-security.nl">✉ robin@remmerswaal-security.nl</a>
+          <a href="https://www.linkedin.com/in/robin-remmerswaal-15b357193" target="_blank" rel="noopener noreferrer">↗ LinkedIn — Robin Remmerswaal</a>
+        </div>
+        <div style="margin-top:1.75rem; padding:1rem 1.25rem; border:1px solid var(--border); border-radius:3px; background:var(--black);">
+          <div style="font-family:var(--mono); font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.5rem;">Liever direct schakelen?</div>
+          <p style="font-size:0.82rem; color:var(--text); margin:0; line-height:1.6;">Stuur een mail of bericht via LinkedIn met een moment dat u uitkomt — ik plan er dezelfde dag nog een belafspraak voor in.</p>
+        </div>
+        <div style="margin-top:1.25rem; padding:1rem 1.25rem; border:1px solid var(--border); border-radius:3px; background:var(--black);">
+          <div style="font-family:var(--mono); font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.5rem;">Werkgebied</div>
+          <p style="font-size:0.82rem; color:var(--text); margin:0; line-height:1.6;">Den Haag en omgeving · Heel Nederland op afstand mogelijk</p>
+        </div>
+        <div class="contact-guarantee" style="margin-top:1.25rem;">
+          <div class="g-label">✓ Wat u kunt verwachten</div>
+          <p>Reactie binnen één werkdag · AVG-conforme verwerking · Geen automatische mailinglijst · Geen verkoopdruk</p>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xwvdbwra" method="POST">
+        <div class="form-group">
+          <label>Naam</label>
+          <input type="text" name="naam" placeholder="Jan de Vries" required />
+        </div>
+        <div class="form-group">
+          <label>Kantoornaam</label>
+          <input type="text" name="bedrijf" placeholder="De Vries & Partners Advocaten" />
+        </div>
+        <div class="form-group">
+          <label>E-mailadres</label>
+          <input type="email" name="email" placeholder="jan@devries.nl" required />
+        </div>
+        <div class="form-group">
+          <label>Interesse in</label>
+          <select name="dienst">
+            <option value="">Selecteer een pakket...</option>
+            <option value="quickscan">Quickscan (€795)</option>
+            <option value="complete-assessment">Complete Assessment (€1.795)</option>
+            <option value="preparedness-scan">Preparedness Scan (€1.495)</option>
+            <option value="monitoring-basis">Monitoring — Basis (€595/mnd)</option>
+            <option value="monitoring-pro">Monitoring — Pro (€895/mnd)</option>
+            <option value="monitoring-premium">Monitoring — Premium (€1.295/mnd)</option>
+            <option value="advies">Vraag / overleg</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Bericht (optioneel)</label>
+          <textarea name="bericht" placeholder="Beschrijf kort uw situatie of stel een vraag. Hoe meer context, hoe beter ik u kan helpen."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Verstuur aanvraag →</button>
+        <p class="form-disclaimer">Uw gegevens worden uitsluitend gebruikt om uw aanvraag te beantwoorden en worden niet gedeeld met derden.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Remmerswaal<span>.</span>Security</span>
+  <p>© 2026 Remmerswaal Security · Den Haag · robin@remmerswaal-security.nl</p>
+</footer>
+
+</body>
+</html>
