@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Voorbeeldrapport — Externe Security Scan | Remmerswaal Security</title>
+<title>Voorbeeldrapport: externe security scan | Remmerswaal Security</title>
+<meta name="description" content="Een voorbeeldrapport van een externe vulnerability scan, met fictieve bevindingen, in dezelfde opzet als wat u van Remmerswaal Security zou ontvangen." />
+<meta property="og:title" content="Voorbeeldrapport: externe security scan | Remmerswaal Security" />
+<meta property="og:description" content="Een voorbeeldrapport van een externe vulnerability scan, met fictieve bevindingen, in dezelfde opzet als wat u zou ontvangen." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://remmerswaal-security.nl/voorbeeldrapport.html" />
+<meta property="og:locale" content="nl_NL" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -261,7 +268,7 @@
 <body>
 
 <div class="sample-banner">
-  <strong>Voorbeeldrapport</strong> — fictieve klant en gegevens, ter illustratie van hoe een Remmerswaal Security-rapport eruitziet. <a href="index.html">← Terug naar de website</a>
+  <strong>Voorbeeldrapport</strong>: fictieve klant en gegevens, ter illustratie van hoe een Remmerswaal Security-rapport eruitziet. <a href="index.html">← Terug naar de website</a>
 </div>
 
 <div class="wrap">
@@ -269,13 +276,13 @@
   <!-- HEADER -->
   <div class="report-header">
     <div class="report-eyebrow">Externe Vulnerability Scan · Rapport</div>
-    <div class="report-title">Van Doorn Logistics B.V.</div>
-    <div class="report-sub">Basis Externe Scan — resultaten en aanbevelingen</div>
+    <h1 class="report-title">Voorbeeldbedrijf B.V.</h1>
+    <div class="report-sub">Basis Externe Scan: resultaten en aanbevelingen</div>
 
     <div class="meta-grid">
       <div class="meta-item">
         <div class="label">Scandatum</div>
-        <div class="value">03–04 juli 2026</div>
+        <div class="value">3 en 4 juli 2026</div>
       </div>
       <div class="meta-item">
         <div class="label">Scope</div>
@@ -287,7 +294,7 @@
       </div>
       <div class="meta-item">
         <div class="label">Rapport-ID</div>
-        <div class="value">RS-2026-0071</div>
+        <div class="value">RS-VOORBEELD-001</div>
       </div>
     </div>
   </div>
@@ -295,15 +302,15 @@
   <!-- MANAGEMENTSAMENVATTING -->
   <section>
     <div class="section-label">Managementsamenvatting</div>
-    <h2>Wat we vonden, in gewone taal</h2>
+    <h2>Wat ik vond, in gewone taal</h2>
     <p class="summary-text">
-      We hebben de systemen van Van Doorn Logistics die vanaf het internet bereikbaar zijn
+      Ik heb de systemen van Voorbeeldbedrijf B.V. die vanaf het internet bereikbaar zijn
       onderzocht op bekende kwetsbaarheden. In totaal zijn er <strong>6 bevindingen</strong>
       gedaan, waarvan er <strong>één direct risico vormt</strong> voor de bedrijfsvoering: een
       extern bereikbare Windows-server met een verouderde toegangsmethode die eenvoudig te
       misbruiken is. De overige bevindingen zijn minder urgent maar wel het waard om binnen
       afzienbare tijd op te lossen. Geen van de bevindingen wijst op een lopende inbraak of
-      datalek — dit is een preventief overzicht, geen incidentmelding.
+      datalek: dit is een preventief overzicht, geen incidentmelding.
     </p>
 
     <div class="risk-strip">
@@ -322,11 +329,11 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Extern bereikbare RDP-poort zonder aanvullende beveiliging</div>
-        <div class="sev-badge sev-critical">Kritiek — CVSS 9.1</div>
+        <div class="sev-badge sev-critical">Kritiek · CVSS 9.1</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Host: <strong>85.xxx.xxx.42</strong></span>
+          <span>Host: <strong>203.0.113.10</strong></span>
           <span>Poort: <strong>3389/tcp</strong></span>
           <span>Dienst: <strong>Remote Desktop Protocol</strong></span>
         </div>
@@ -349,16 +356,16 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Verouderde TLS-versie op de mailserver</div>
-        <div class="sev-badge sev-high">Hoog — CVSS 7.4</div>
+        <div class="sev-badge sev-high">Hoog · CVSS 7.4</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Host: <strong>85.xxx.xxx.51</strong></span>
+          <span>Host: <strong>203.0.113.25</strong></span>
           <span>Poort: <strong>993/tcp</strong></span>
           <span>Dienst: <strong>IMAPS</strong></span>
         </div>
         <p class="finding-desc">
-          De mailserver ondersteunt nog TLS 1.0 en 1.1 — versleutelingsprotocollen die al
+          De mailserver ondersteunt nog TLS 1.0 en 1.1, versleutelingsprotocollen die al
           jaren als onveilig gelden en niet langer voldoen aan gangbare beveiligingsnormen.
           Verkeer dat via deze oudere protocollen loopt is kwetsbaarder voor afluisteren.
         </p>
@@ -374,11 +381,11 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Verouderde WordPress-versie op de bedrijfswebsite</div>
-        <div class="sev-badge sev-medium">Middel — CVSS 5.8</div>
+        <div class="sev-badge sev-medium">Middel · CVSS 5.8</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Host: <strong>vandoornlogistics.nl</strong></span>
+          <span>Host: <strong>voorbeeldbedrijf.example</strong></span>
           <span>Poort: <strong>443/tcp</strong></span>
           <span>Dienst: <strong>WordPress 5.9.3</strong></span>
         </div>
@@ -399,16 +406,16 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Ontbrekende DMARC-policy op het e-maildomein</div>
-        <div class="sev-badge sev-medium">Middel — CVSS 4.9</div>
+        <div class="sev-badge sev-medium">Middel · CVSS 4.9</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Domein: <strong>vandoornlogistics.nl</strong></span>
+          <span>Domein: <strong>voorbeeldbedrijf.example</strong></span>
           <span>Record: <strong>DMARC (DNS TXT)</strong></span>
         </div>
         <p class="finding-desc">
           Er is geen DMARC-record ingesteld. Hierdoor is het voor kwaadwillenden relatief
-          eenvoudig om e-mails te versturen die lijken alsof ze van uw domein komen —
+          eenvoudig om e-mails te versturen die lijken alsof ze van uw domein komen,
           bijvoorbeeld richting klanten of leveranciers, wat het risico op phishing via uw
           naam vergroot.
         </p>
@@ -424,11 +431,11 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Serverversie zichtbaar in HTTP-headers</div>
-        <div class="sev-badge sev-low">Laag — CVSS 2.6</div>
+        <div class="sev-badge sev-low">Laag · CVSS 2.6</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Host: <strong>85.xxx.xxx.51</strong></span>
+          <span>Host: <strong>203.0.113.25</strong></span>
           <span>Poort: <strong>443/tcp</strong></span>
         </div>
         <p class="finding-desc">
@@ -448,11 +455,11 @@
     <div class="finding">
       <div class="finding-head">
         <div class="finding-title">Ontbrekende security-headers op de website</div>
-        <div class="sev-badge sev-low">Laag — CVSS 2.1</div>
+        <div class="sev-badge sev-low">Laag · CVSS 2.1</div>
       </div>
       <div class="finding-body">
         <div class="finding-meta">
-          <span>Host: <strong>vandoornlogistics.nl</strong></span>
+          <span>Host: <strong>voorbeeldbedrijf.example</strong></span>
           <span>Poort: <strong>443/tcp</strong></span>
         </div>
         <p class="finding-desc">
@@ -516,9 +523,9 @@
         startpunt om de belangrijkste risico's als eerste aan te pakken.
       </p>
       <p>
-        Bij de <strong>Complete Assessment</strong> gaan we dieper: inclusief intern
-        netwerk, webapplicatie-beoordeling en een adviesgesprek waarin we dit rapport samen
-        doornemen.
+        Bij de <strong>Complete Assessment</strong> ga ik dieper: inclusief intern
+        netwerk, een webapplicatie-check en een adviesgesprek waarin ik dit rapport samen
+        met u doorneem.
       </p>
     </div>
 
@@ -531,7 +538,7 @@
 </div>
 
 <footer>
-  Dit is een voorbeeldrapport met fictieve gegevens · Remmerswaal Security · Den Haag
+  Dit is een voorbeeldrapport met fictieve gegevens · Remmerswaal Security · Roosendaal
 </footer>
 
 </body>
