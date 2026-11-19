@@ -461,13 +461,6 @@ h2 {
   margin-bottom: 1.5rem;
   line-height: 1;
 }
-.dienst-price .price-old {
-  text-decoration: line-through;
-  color: var(--muted);
-  font-weight: 400;
-  font-size: 1.05rem;
-  margin-right: 0.5rem;
-}
 .dienst-price small {
   font-size: 0.72rem;
   color: var(--muted);
