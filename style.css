@@ -709,6 +709,83 @@ footer {
 .footer-logo span { color: var(--accent); }
 footer p { font-size: 0.73rem; color: var(--muted); }
 
+/* ── LEGAL CONTENT ── */
+.legal-content { max-width: 720px; }
+.legal-content .legal-meta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 2.75rem;
+}
+.legal-content h2 {
+  font-size: 1.15rem;
+  margin-top: 2.75rem;
+  margin-bottom: 0.9rem;
+}
+.legal-content h2:first-of-type { margin-top: 0; }
+.legal-content p,
+.legal-content li {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+.legal-content ul,
+.legal-content ol {
+  margin: 0 0 1.25rem 1.25rem;
+}
+.legal-content strong { color: var(--white); font-weight: 600; }
+.legal-content a { color: var(--accent); }
+.legal-draft-notice {
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--danger);
+  border-radius: 2px;
+  background: rgba(255,59,59,0.05);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text);
+}
+
+/* ── FAQ ── */
+.faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--panel);
+  padding: 0;
+}
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1.1rem 1.4rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item .faq-answer {
+  padding: 0 1.4rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.75;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 680px) {
   nav { padding: 0 1.25rem; }
